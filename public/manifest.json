@@ -18,7 +18,7 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".mvp-road/",
+  "start_url": "https://vauweb.github.io/mvp-road/index.html",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
