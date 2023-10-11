@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/mvp-road/static/css/main.dca87cbb.css",
-    "main.js": "/mvp-road/static/js/main.113a81cc.js",
+    "main.css": "/mvp-road/static/css/main.63b7745b.css",
+    "main.js": "/mvp-road/static/js/main.ceeb09cd.js",
     "static/js/787.76fe88c6.chunk.js": "/mvp-road/static/js/787.76fe88c6.chunk.js",
     "service-worker.js": "/mvp-road/service-worker.js",
     "index.html": "/mvp-road/index.html",
-    "main.dca87cbb.css.map": "/mvp-road/static/css/main.dca87cbb.css.map",
-    "main.113a81cc.js.map": "/mvp-road/static/js/main.113a81cc.js.map",
+    "main.63b7745b.css.map": "/mvp-road/static/css/main.63b7745b.css.map",
+    "main.ceeb09cd.js.map": "/mvp-road/static/js/main.ceeb09cd.js.map",
     "787.76fe88c6.chunk.js.map": "/mvp-road/static/js/787.76fe88c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dca87cbb.css",
-    "static/js/main.113a81cc.js"
+    "static/css/main.63b7745b.css",
+    "static/js/main.ceeb09cd.js"
   ]
 }
