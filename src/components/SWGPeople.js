@@ -1,8 +1,17 @@
 import React from "react";
+import cn from 'classnames'
 
-export function SWGPeople({color = "#9fda0a", head = "#000000"}) {
-  return <g className="people_walk_path">
-    <g className="people_walk_leg">
+/**
+ *
+ * @param {string} color
+ * @param {string} head
+ * @param {('idle','walk')} status
+ * @return {Element}
+ * @constructor
+ */
+export function SWGPeople({color = "#9fda0a", head = "#000000", status = 'idle'}) {
+  return <g className={cn(`people_${status}`)}>
+    <g className={cn('people_leg')}>
       <circle cx="-15" cy="-15" r="10" fill={color} stroke="black" strokeWidth="1"/>
       <circle cx="15" cy="15" r="10" fill={color} stroke="black" strokeWidth="1"/>
     </g>

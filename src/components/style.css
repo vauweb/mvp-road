@@ -1,5 +1,4 @@
-.people_walk_leg{
-  /*transform: scaleY(-1);*/
+.people_walk .people_leg{
   animation-duration: var(--speed-walk);
   animation-iteration-count: infinite;
   animation-name: walk_leg;
@@ -17,58 +16,34 @@
   }
 }
 
-.people_walk_path{
-  animation-duration: calc(var(--speed-walk) * 3);
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-name: walk_path;
+.people_walk{
+  /*--distanse: 1000;*/
+  --distanse-px: 1000px;
+  transform: translateY(calc(0px - var(--distanse-px)));
+  transition: transform;
+  transition-duration: calc(var(--speed-walk));
+  transition-timing-function: linear;
 }
 
-@keyframes walk_path {
-  0% {
-    opacity: 0;
-    transform: translate(0px, 150px);
-  }
-  25% {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-  75% {
-    opacity: 1;
-    transform: translate(0px, -300px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(0px, -450px);
-  }
-}
+.car_run{
+  /*--distanse: 3000;*/
+  --distanse-px:3000px;
+  transform: translateX(calc(0px - var(--distanse-px)));
+  transition: transform;
+  transition-duration: calc(var(--speed-walk));
+  transition-timing-function: linear;
 
-.car_path{
-  animation-duration: calc(var(--speed-walk) * 3);
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-name: car_path;
+  /*animation-duration: calc(var(--speed-walk) * 3);*/
+  /*animation-timing-function: linear;*/
+  /*animation-iteration-count: infinite;*/
+  /*animation-name: car_path;*/
 }
 
 @keyframes car_path {
-  0% {
-    opacity: 0;
-    transform: translate(300px, 0px);
-  }
-  50% {
-    opacity: 1;
+  from {
     transform: translate(0px, 0px);
   }
-  75% {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-  90% {
-    opacity: 1;
-    transform: translate(-1200px, 0px);
-  }
-  100% {
-    opacity: 0;
-    transform: translate(-1200px, 0px);
+  to {
+    transform: translate(-3000px, 0px);
   }
 }
