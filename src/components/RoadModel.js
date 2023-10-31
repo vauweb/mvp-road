@@ -1,17 +1,19 @@
 import React, {useCallback, useMemo, useState} from "react";
+import {useRoadModel} from './useRoadModel'
 import {SWGAuto} from "./SWGAuto";
 import {SWGPeople} from "./SWGPeople";
-import './style.css';
 import {SWGLight} from "./SWGLight";
+import './style.css';
 
 const animationTime = 1000;
 
 export function RoadModel() {
-  const [peopleQueue, setPeopleQueue] = useState(40);
+  const { autoQueue, peopleQueue, lightStatus } = useRoadModel();
+  // const [peopleQueue, setPeopleQueue] = useState(40);
   const [peopleMove, setPeopleMove] = useState(0);
-  const [autoQueue, setAutoQueue] = useState(10);
+  // const [autoQueue, setAutoQueue] = useState(10);
   const [autoMove, setAutoMove] = useState(0);
-  const [lightStatus, setLightStatus] = useState('wait')
+  // const [lightStatus, setLightStatus] = useState('wait')
 
   const testP = useCallback(() => {
     setPeopleMove(p => p + 3);
